@@ -1,0 +1,82 @@
+/* components/calendar/index.wxss */
+
+.calendar-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-week-day {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  line-height: 5;
+}
+
+.calendar-day-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.calendar-day {
+  width: calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 5;
+  position: relative;
+}
+
+.active-day-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: solid 1px slateblue;
+}
+
+.active-day-text {
+  color: slateblue;
+}
+
+.current-date {
+  font-size: 2rem;
+  font-weight: thin;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-wrapper {
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-triangle {
+  width: 1.6rem;
+  height: 1.6rem;
+  transform: rotate(-90deg);
+  opacity: .8;
+}
+.right-triangle {
+  width: 1.6rem;
+  height: 1.6rem;
+  transform: rotate(90deg);
+  opacity: .8;
+}
+
+swiper {
+  height: 40rem;
+}

@@ -1,0 +1,6 @@
+<page-meta page-font-size="10px"></page-meta>
+
+<view wx:if="{{showEl}}" class="glass-ui_notice-bar" style="{{closeStyle}}" bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view wx:if="{{text}}">{{text}}</view>
+  <slot name="custom" wx:else></slot>
+</view>

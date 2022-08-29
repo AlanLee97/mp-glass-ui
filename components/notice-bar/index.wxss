@@ -1,0 +1,60 @@
+/* pages/components/notice-bar/index.wxss */
+page {
+  width: 100vw;
+  height: 100vh;
+  font-size: 10px;
+}
+view {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.glass-ui_notice-bar {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  right: 0;
+  width: 95%;
+  padding: 2rem;
+  opacity: 0;
+  animation: appearEl 5s 1;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: .5rem;
+  box-shadow: .4rem .4rem 1.6rem rgba(0, 0, 0, .1);
+  background-color: rgba(255, 255, 255, .01);
+  backdrop-filter: blur(1rem);
+}
+
+@keyframes appearEl {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  10% {
+    top: 10vh;
+    opacity: 1;
+  }
+  80% {
+    top: 10vh;
+    opacity: 1;
+  }
+  90% {
+    top: 0vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0vh;
+    opacity: 0;
+  }
+}
+
+@keyframes disappearEl {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,40 @@
+<!--components/calendar/index.wxml-->
+<wxs module="tools">
+  function isActive(activeDaysData = [], curMonth, day) {
+    var flag = false;
+    activeDaysData.forEach(function(data){
+      if(data.month === curMonth) {
+        flag = data.days.indexOf(day) > -1;
+      }
+    })
+    return flag;
+  }
+  module.exports.isActive = isActive;
+</wxs>
+<view class="current-date">
+  <view class="arrow-wrapper">
+    <image wx:if="{{currentSwiperIndex !== 0}}" bind:tap="toLastMonth" class="left-triangle" src="../../images/round-triangle.svg" />
+  </view>
+  <text>{{currentCalendar.year}}年 / {{currentCalendar.month}}月</text>
+  <view class="arrow-wrapper">
+    <image wx:if="{{currentSwiperIndex !== calendarList.length - 1}}" bind:tap="toNextMonth" class="right-triangle" src="../../images/round-triangle.svg" />
+  </view>
+</view>
+<swiper current="{{currentSwiperIndex}}" bindchange="swiperChange">
+  <swiper-item wx:for="{{calendarList}}" wx:key="index">
+    <view class="calendar">
+      <view class="calendar-header">
+        <view class="calendar-week-day" wx:for="{{weekDays}}" wx:key="index">
+          {{item}}
+        </view>
+      </view>
+
+      <view class="calendar-day-wrapper">
+        <view class="calendar-day" wx:for="{{item.days}}" wx:key="index">
+          <view class="{{tools.isActive(activeDays, currentCalendar.month, item) ? 'active-day-text' : ''}}" style="{{tools.isActive(activeDays, currentCalendar.month, item) ? 'color: ' + themeColor + '; ' : ''}}">{{item}}</view>
+          <view wx:if="{{tools.isActive(activeDays, currentCalendar.month, item)}}" class="active-day-mark" style="border-color: {{themeColor}}"></view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

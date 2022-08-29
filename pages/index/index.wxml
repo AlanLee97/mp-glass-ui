@@ -1,0 +1,11 @@
+<page-meta root-font-size="10px"></page-meta>
+<view class="page">
+  <view style="margin-top: 40vh;"></view>
+  <view class="components-demo-box-wrapper">
+    <view class="components-demo-box" wx:for="{{cpnList}}" wx:key="index" bindtap="goPage" data-cpnname="{{item.name}}">
+      <view class="cpn-zh-name">{{item.zhName}}</view>
+      <view class="cpn-name">{{item.name}}</view>
+    </view>
+  </view>
+
+</view>

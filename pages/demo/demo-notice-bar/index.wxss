@@ -1,0 +1,23 @@
+.page {
+  /* background-color: slateblue; */
+  width: 100vw;
+  height: 100vh;
+}
+.el {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  position: fixed;
+  top: 0vh;
+  left: 10vw;
+  z-index: -1;
+  background-color: slateblue;
+}
+
+.btn {
+  top: 50vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

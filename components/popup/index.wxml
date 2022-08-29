@@ -1,0 +1,7 @@
+<view class="popup" bindtap="closePopup">
+  <view class="popup-content-wrapper">
+    <view class="popup-content" style="{{contnetStyle}}" catchtap>
+      <slot></slot>
+    </view>
+  </view>
+</view>

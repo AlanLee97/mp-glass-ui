@@ -1,0 +1,33 @@
+.page {
+  /* background-color: slateblue; */
+  width: 100vw;
+  height: 100vh;
+}
+.components-demo-box-wrapper {
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.components-demo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, .8);
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: .6rem .6rem 20rem rgba(0, 0, 0, .2);
+  padding: 1rem 2rem;
+  width: calc(100% / 3);
+  margin-bottom: 2rem;
+}
+
+.cpn-zh-name {
+  font-size: 1.4rem;
+}
+
+.cpn-name {
+  font-size: 1.2rem;
+}

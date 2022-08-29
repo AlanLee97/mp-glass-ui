@@ -1,0 +1,13 @@
+<page-meta root-font-size="10px"></page-meta>
+<view class="page">
+  <notice-bar show="{{showNoticeBar}}" bind:closed="noticeClosed" text="hahah">
+    <view slot="custom">
+      啦啦啦哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈好啊啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊
+      啦啦啦哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈好啊啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊
+      啦啦啦哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈好啊啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊
+    </view>
+  </notice-bar>
+  <view class="el"></view>
+
+  <button class="btn" bindtap="toggleNoticeBar">toggle notice bar</button>
+</view>
