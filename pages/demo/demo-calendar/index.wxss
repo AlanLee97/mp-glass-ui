@@ -1,0 +1,5 @@
+/* pages/demo/demo-calendar/index.wxss */
+
+.demo-calendar-page {
+  padding-top: 20vh;
+}

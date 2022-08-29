@@ -1,0 +1,6 @@
+<page-meta root-font-size="10px"></page-meta>
+<nav-bar/>
+
+<view class="demo-calendar-page">
+  <calendar></calendar>
+</view>

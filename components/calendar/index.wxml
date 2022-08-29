@@ -13,11 +13,11 @@
 </wxs>
 <view class="current-date">
   <view class="arrow-wrapper">
-    <image wx:if="{{currentSwiperIndex !== 0}}" bind:tap="toLastMonth" class="left-triangle" src="../../images/round-triangle.svg" />
+    <image wx:if="{{currentSwiperIndex !== 0}}" bind:tap="toLastMonth" class="left-triangle" src="./img/round-triangle.svg" />
   </view>
   <text>{{currentCalendar.year}}年 / {{currentCalendar.month}}月</text>
   <view class="arrow-wrapper">
-    <image wx:if="{{currentSwiperIndex !== calendarList.length - 1}}" bind:tap="toNextMonth" class="right-triangle" src="../../images/round-triangle.svg" />
+    <image wx:if="{{currentSwiperIndex !== calendarList.length - 1}}" bind:tap="toNextMonth" class="right-triangle" src="./img/round-triangle.svg" />
   </view>
 </view>
 <swiper current="{{currentSwiperIndex}}" bindchange="swiperChange">

@@ -1,0 +1,15 @@
+<page-meta root-font-size="10px"></page-meta>
+
+<nav-bar/>
+
+<view class="demo-popup-page">
+  <button bindtap="openPopup" class="btn">打开popup</button>
+  <popup wx:if="{{showPopup}}" bind:close="closePopup">
+    <view class="content">
+      这里是自定义内容
+    </view>
+  </popup>
+
+  <view class="decorate-el"></view>
+</view>
+

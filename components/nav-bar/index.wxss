@@ -1,0 +1,44 @@
+page {
+  width: 100vw;
+  height: 100vh;
+  font-size: 10px;
+}
+
+.glass-ui_nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, .001);
+  backdrop-filter: blur(1rem);
+}
+
+.glass-ui_nav-bar-container {
+  position: absolute;
+  bottom: 0;
+  z-index: 9999999;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.glass-ui_nav-bar-item {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.glass-ui_nav-bar-icon-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.glass-ui_nav-bar-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}

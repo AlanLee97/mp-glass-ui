@@ -7,4 +7,16 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+.page-bg-decorate-top {
+  position: fixed;
+  z-index: -1;
+  top: -100vw;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+  background-color: rgba(105, 90, 205, 0.5);
+  backdrop-filter: blur(10rem);
+  filter: blur(10rem);
+}

@@ -1,13 +1,17 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/demo/demo-notice-bar/index"
+    "pages/demo/demo-notice-bar/index",
+    "pages/demo/demo-popup/index",
+    "pages/demo/demo-calendar/index",
+    "pages/demo/demo-nav-bar/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

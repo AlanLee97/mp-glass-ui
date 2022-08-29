@@ -2,6 +2,10 @@
   /* background-color: slateblue; */
   width: 100vw;
   height: 100vh;
+  padding-top: 40vh;
+  position: fixed;
+  overflow: scroll;
+  background-color: #fff;
 }
 .components-demo-box-wrapper {
   display: flex;
@@ -16,7 +20,8 @@
   justify-content: center;
   align-items: center;
   color: rgba(0, 0, 0, .8);
-  background-color: #fff;
+  backdrop-filter: blur(1rem);
+  background-color: rgba(255,255,255,.001);
   border-radius: 1rem;
   box-shadow: .6rem .6rem 20rem rgba(0, 0, 0, .2);
   padding: 1rem 2rem;
@@ -30,4 +35,16 @@
 
 .cpn-name {
   font-size: 1.2rem;
+}
+
+.decorate-el {
+  position: fixed;
+  z-index: -1;
+  bottom: -100vw;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+  background-color: rgba(105, 90, 205, 0.5);
+  backdrop-filter: blur(10rem);
+  filter: blur(10rem);
 }

@@ -1,0 +1,14 @@
+
+<page-meta root-font-size="10px"></page-meta>
+<nav-bar wx:if="{{showDefaultNav}}"></nav-bar>
+<view class="page-bg-decorate-top"></view>
+<nav-bar wx:if="{{showCustomNav}}" customBack="{{true}}">
+  <view slot="back">返回</view>
+  <view slot="title">页面标题</view>
+</nav-bar>
+<view class="demo-nav-bar-page">
+  <view class="btn-wrapper">
+    <button bindtap="displayDefualtNav">默认导航栏</button>
+    <button bindtap="displayCustomNav">自定义导航栏</button>
+  </view>
+</view>

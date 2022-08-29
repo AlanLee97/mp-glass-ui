@@ -1,4 +1,7 @@
 <page-meta root-font-size="10px"></page-meta>
+
+<nav-bar/>
+
 <view class="page">
   <notice-bar show="{{showNoticeBar}}" bind:closed="noticeClosed" text="hahah">
     <view slot="custom">

@@ -6,6 +6,10 @@ Page({
   data: {
     cpnList: [
       {
+        name: 'nav-bar',
+        zhName: '导航栏',
+      },
+      {
         name: 'notice-bar',
         zhName: '通知栏',
       },

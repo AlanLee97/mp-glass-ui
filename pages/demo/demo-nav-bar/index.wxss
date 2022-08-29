@@ -1,0 +1,9 @@
+/* pages/demo/demo-nav-bar/index.wxss */
+
+.btn-wrapper {
+  margin-top: 20vh;
+}
+
+button {
+  margin-top: 20px;
+}
