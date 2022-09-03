@@ -1,6 +1,6 @@
 <page-meta page-font-size="10px"></page-meta>
 
-<view class="glass-ui_nav-bar" style="height: {{navbar.height}}px;">
+<view class="glass-ui_nav-bar {{glassable ? '' : 'not-glass'}}" style="height: {{navbar.height}}px;">
   <view class="glass-ui_nav-bar-container" style="height: {{menuInfo.height}}px;">
     <view class="glass-ui_nav-bar-back glass-ui_nav-bar-item">
       <slot wx:if="{{customBack}}" name="back"></slot>

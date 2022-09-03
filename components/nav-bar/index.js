@@ -10,6 +10,10 @@ Component({
     customBack: {
       type: Boolean,
       value: false
+    },
+    glassable: {
+      type: Boolean,
+      value: true
     }
   },
 
